@@ -4,27 +4,75 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>mac tema 1</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+		</style>
+		<style>
+				.reveal h4{font-family: 'Permanent Marker', cursive;}
+		</style>
 	</head>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide Nando 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
+				<section data-background-image="media/corazon.svg" data-background-size="contain">
+	
+				</section>
+				<section data-auto-animate data-background-opacity=".6" data-background-image="https://www.sdi.es/wp-content/uploads/2022/02/agencia-marketing-automation-clientes.svg" data-background-size="contain">
+					<h3>tema 1: introducción al marketing</h3>
+				</section>
+				<section data-auto-animate data-background-opacity=".15" data-background-image="https://www.sdi.es/wp-content/uploads/2022/02/agencia-marketing-automation-clientes.svg" data-background-size="contain">
+					<h3>tema 1: introducción al marketing</h3>
+					<ul>
+						<li>¿Qué funciones desempeña el marketing?</li>
+						<li>¿Conoces alguna acción de marketing que desempeñe una empresa conocida?</li>
+						<li>¿Has oido hablar del marketing mix?</li>
+					</ul>
+				</section>
+				<section data-background-image="https://amzsellersuite.com/zonbase/images/landing/zonresearch/banner-right-img.svg" data-background-size="50%" data-background-opacity=".15" data-background-position="right" >
+					<h4 style="color:#009a7aff">Definición de marketing</h4>
+					El <span style="font-family:Permanent Marker; color:purple">marketing</span> es el proceso de exploración, creación y entrega de <span style="font-family:Permanent Marker; color:purple">valor</span> para satisfacer las necesidades de un mercado objetivo en términos de bienes y servicios
+					<br> <br>
+					<span  style="font-family:Permanent Marker; color:purple">valor:</span> se refiere al precio que una persona está dispuesta a pagar por un producto más los beneficios que espera obtener
+				</section>
+
+				<section  data-background-image="https://cdni.iconscout.com/illustration/premium/thumb/scheduling-task-in-the-calendar-4487041-3738448.png" data-background-size="50%" data-background-opacity=".15" data-background-position="left">
+					<h4 style="color:#0099FF">marketing estratégico y operativo</h4>
+					 
+				</section>
+				
+
+				<section  data-background-image="media/mentoring.svg" data-background-size="60%" data-background-opacity=".15" data-background-position="right">
+					<h4 style="color:orange">marketing externo, interno e interactivo</h4>
+					 
+				</section>
+
+				<section  data-background-image="https://www.bairesdev.com/wp-content/uploads//2020/03/scn-Teamwork-Collaboration.svg" data-background-size="50%" data-background-opacity=".15" data-background-position="right">
+					<h4 style="color:cadetblue">marketing transaccional, relacional y emocional</h4>
+					 
+				</section>
+				<section  data-background-image="https://www.swipez.in/images/product/venue-booking-software/industry/housing-society.svg" data-background-size="70%" data-background-opacity=".15" data-background-position="center">
+					<h4 style="color:brown">marketing social</h4>
+				</section>
+				<section data-background-image="media/Business-Man-Podium-Silhouette.svg" data-background-size="contain" data-background-opacity=".15" data-background-position="right">
+					<h4 style="color:grey">marketing político</h4>
+					
+				</section>
+				<section data-background-image="http://bank.khatawat.tech/en/public/ar/image/site/service.png" data-background-size="50%" data-background-opacity=".15" data-background-position="center">
+					<h4 style="color:cadetblue"> marketing de servicios</h4>
+					 
+				</section>
+				<section data-background-image="https://acumbamail.com/blog/wp-content/uploads/2020/09/promocion-contenido-email.svg" data-background-size="contain" data-background-opacity=".15" data-background-position="center">
+					<h4 style="color:green">marketing verde</h4>
+					 
 				</section>
 			</div>
 		</div>
@@ -33,15 +81,25 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/appearance/appearance.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				appearance:{
+					autoappear:true,
+					autoelements: {
+							'ul li': 'animate__fadeInLeft',
+							'ol li': 'animate__fadeInRight',
+							'h4': 'animate__tada',
+							'span': 'animate__heartBeat'
+}
+				},
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Appearance ]
 			});
 		</script>
 	</body>
