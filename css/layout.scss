@@ -37,10 +37,11 @@
 .reveal .r-hstack {
 	display: flex;
 
-	img, video {
+	img, video, iframe {
 		min-width: 0;
 		min-height: 0;
 		object-fit: contain;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 }
 
